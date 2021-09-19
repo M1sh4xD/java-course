@@ -1,6 +1,6 @@
 // PersonException file
 
-package com.mirea.lesson1;
+package com.mirea.jpc.practice1;
 
 public class PersonEx {
 

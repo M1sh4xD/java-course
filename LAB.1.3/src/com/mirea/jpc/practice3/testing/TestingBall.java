@@ -1,6 +1,6 @@
-package com.mirea.jpc.practice2.testing;
+package com.mirea.jpc.practice3.testing;
 
-import com.mirea.jpc.practice2.entities.Ball;
+import com.mirea.jpc.practice3.entities.Ball;
 
 public class TestingBall {
     public static void testingBall() {

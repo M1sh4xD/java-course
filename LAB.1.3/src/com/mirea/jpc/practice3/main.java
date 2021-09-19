@@ -1,16 +1,12 @@
-package com.mirea.jpc.practice1;
+package com.mirea.jpc.practice3;
 
-import com.mirea.jpc.practice1.testing.TestingBall;
-import com.mirea.jpc.practice1.testing.TestingBook;
-import com.mirea.jpc.practice1.entities.Circle;
-import com.mirea.jpc.practice1.movable.MovableCircle;
-import com.mirea.jpc.practice1.movable.MovableRectangle;
-
+import com.mirea.jpc.practice3.entities.Circle;
+import com.mirea.jpc.practice3.movable.MovableCircle;
+import com.mirea.jpc.practice3.movable.MovableRectangle;
 
 public class main {
+
     public static void main(String[] args) {
-        TestingBall.testingBall();
-        TestingBook.testingBook();
         Circle c1 = new Circle(2, "Green", true);
         System.out.println(c1);
 

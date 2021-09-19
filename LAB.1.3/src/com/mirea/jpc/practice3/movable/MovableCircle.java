@@ -1,4 +1,4 @@
-package com.mirea.jpc.practice1.movable;
+package com.mirea.jpc.practice3.movable;
 
 public class MovableCircle implements Movable {
 

@@ -1,7 +1,7 @@
-package com.mirea.jpc.practice1.testing;
+package com.mirea.jpc.practice3.testing;
 
-import com.mirea.jpc.practice1.entities.Circle;
-import com.mirea.jpc.practice1.entities.Shape;
+import com.mirea.jpc.practice3.entities.Circle;
+import com.mirea.jpc.practice3.entities.Shape;
 
 public class CircleTest {
 

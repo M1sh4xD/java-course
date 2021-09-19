@@ -1,4 +1,4 @@
-package com.mirea.jpc.practice3.entities;
+package com.mirea.jpc.practice1.entities;
 
 public class Circle extends Shape {
 

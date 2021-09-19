@@ -1,7 +1,7 @@
-package com.mirea.jpc.practice3.testing;
+package com.mirea.jpc.practice1.testing;
 
-import com.mirea.jpc.practice3.entities.Rectangle;
-import com.mirea.jpc.practice3.entities.Shape;
+import com.mirea.jpc.practice1.entities.Rectangle;
+import com.mirea.jpc.practice1.entities.Shape;
 
 public class RectangleTest {
     public void checkTest() {

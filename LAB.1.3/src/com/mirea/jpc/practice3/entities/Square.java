@@ -1,6 +1,6 @@
-package com.mirea.jpc.practice1.entities;
+package com.mirea.jpc.practice3.entities;
 
-public class Square extends com.mirea.jpc.practice1.entities.Rectangle {
+public class Square extends Rectangle{
 
     public Square() {
 

@@ -1,4 +1,4 @@
-#MIREA`s Java Programming course | Aivazyan Mikhail | IKBO-06-20 
+# MIREA`s Java Programming course | Aivazyan Mikhail | IKBO-06-20 
 
 Репозиторий с проектами практических заданий
 

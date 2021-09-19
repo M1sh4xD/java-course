@@ -1,4 +1,4 @@
-package com.mirea.jpc.practice2.entities;
+package com.mirea.jpc.practice3.entities;
 
 public class Author {
     private String name, email;

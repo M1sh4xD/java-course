@@ -1,6 +1,6 @@
-package com.mirea.jpc.practice2.testing;
+package com.mirea.jpc.practice3.testing;
 
-import com.mirea.jpc.practice2.entities.Book;
+import com.mirea.jpc.practice3.entities.Book;
 
 public class TestingBook {
     public static void testingBook() {

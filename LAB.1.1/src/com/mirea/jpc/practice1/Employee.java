@@ -1,4 +1,4 @@
-package com.mirea.lesson1;
+package com.mirea.jpc.practice1;
 
 final public class Employee extends AbstractPerson{
     public Employee(String name) {

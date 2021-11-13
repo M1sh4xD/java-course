@@ -3,7 +3,7 @@ package practice4.frames;
 import javax.swing.*;
 import java.awt.*;
 
-public class football extends JFrame {
+public class Football extends JFrame {
     private static final String MILAN = "AC Milan";
     private static final String REAL_MADRID = "Real Madrid";
 
@@ -16,9 +16,11 @@ public class football extends JFrame {
     int realMadridScore = 0;
     String lastScorer = "N/A";
     String winner = "N/A";
+    boolean check;
 
-    public football() {
+    public Football() {
         super("Practice 4");
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setSize(300, 300);
         setLayout(new FlowLayout());
         add(btnMilan);

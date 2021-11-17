@@ -38,6 +38,8 @@ public class Main {
         System.out.println(cstr4_1.charAt(1));
         System.out.println(temp.charAt(222));
 
+        System.out.println(str1 + str2);
+
 
 
 

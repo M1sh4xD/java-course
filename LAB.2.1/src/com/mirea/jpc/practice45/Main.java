@@ -15,7 +15,7 @@ public class Main {
         // TestFootball.footballCheck(); // uncomment if you want to open task1
         // or change it in testing package NOT HERE
 
-        TestRecursion.recursionCheck(); // uncomment if you want to open task2
+        // TestRecursion.recursionCheck(); // uncomment if you want to open task2
         // or change it in testing package NOT HERE
     }
 }

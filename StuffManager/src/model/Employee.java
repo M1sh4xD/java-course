@@ -1,7 +1,5 @@
 package model;
 
-import model.AbstractPerson;
-
 final public class Employee extends AbstractPerson {
 
     private final String department;

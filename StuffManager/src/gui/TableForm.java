@@ -2,11 +2,9 @@ package gui;
 
 import javax.swing.*;
 import model.Employee;
-import model.Database;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.PreparedStatement;
 import java.util.List;
 
 public class TableForm extends Container {
@@ -19,6 +17,12 @@ public class TableForm extends Container {
     TableForm() {
         tableModel = new StaffTableModel();
         staffTable.setModel(tableModel);
+        refreshButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tableModel.fireTableDataChanged();
+            }
+        });
     }
 
     public JPanel getTablePanel() {

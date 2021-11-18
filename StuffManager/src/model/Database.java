@@ -7,33 +7,32 @@ public class Database {
     private List<Employee> employees;
     private Connection con;
 
-    public Database(){
+    public Database() {
         employees = new LinkedList<Employee>();
     }
 
-    private void addEmployee(Employee person){
+    private void addEmployee(Employee person) {
         employees.add(person);
     }
 
-    public List<Employee> getEmployees(){
+    public List<Employee> getEmployees() {
         return Collections.unmodifiableList(employees);
     }
 
     public void connect() throws SQLException {
-        if (con!=null){
+        if (con != null) {
             return;
         }
         try {
-            Class.forName("org.sqlite.JDBC");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String url = "jdbc:sqlite:db/stuff.db";
-        con = DriverManager.getConnection(url);
+        con = DriverManager.getConnection("jdbc:mysql://47.91.94.147:3306/stuff","java","java");
     }
 
-    public void disconnect(){
-        if (con!=null){
+    public void disconnect() {
+        if (con != null) {
             try {
                 con.close();
             } catch (SQLException e) {
@@ -50,12 +49,12 @@ public class Database {
         checkResult.next();
         int count = checkResult.getInt(1);
 
-        System.out.println("Count for person is "+count+".");
+        System.out.println("Count for person is " + count + ".");
 
         sqlStmt.close();
     }
 
-    public void addEmployeeToDatabase(Employee employee){
+    public void addEmployeeToDatabase(Employee employee) {
         String name = employee.getName();
         int age = employee.getAge();
         String phone = employee.getPhone();
@@ -63,8 +62,8 @@ public class Database {
         String position = employee.getPosition();
         String department = employee.getDepartment();
 
-        String Sql = "INSERT INTO employee(name,department,age,phone,position,gender) values ('"+name+"','"+department+"','"+age+"','"+phone+"','"+position+"','"+gender+"')";
-        System.out.println("SQL = " +Sql);
+        String Sql = "INSERT INTO employee(name,department,age,phone,position,gender) values ('" + name + "','" + department + "','" + age + "','" + phone + "','" + position + "','" + gender + "')";
+        System.out.println("SQL = " + Sql);
 
         try {
             PreparedStatement preparedStatement = con.prepareStatement(Sql);
@@ -78,15 +77,15 @@ public class Database {
 
     }
 
-    public void getFromDatabase(){
+    public void getFromDatabase() {
         employees.clear();
 
         String SQL = "SELECT * FROM employee";
 
-        try{
+        try {
             PreparedStatement stmt = con.prepareStatement(SQL);
             ResultSet set = stmt.executeQuery();
-            while (set.next()){
+            while (set.next()) {
                 Employee temp = new Employee(set.getString("name"), set.getString("department"), set.getInt("age"), set.getString("phone"), set.getString("position"), set.getString("gender"));
                 addEmployee(temp);
             }
@@ -95,5 +94,4 @@ public class Database {
             e.printStackTrace();
         }
     }
-
 }

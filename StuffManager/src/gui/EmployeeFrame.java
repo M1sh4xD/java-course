@@ -2,8 +2,6 @@ package gui;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import controller.Controller;
 
@@ -11,7 +9,7 @@ public class EmployeeFrame extends JFrame {
     private Controller controller;
     private JButton addButton;
 
-    public EmployeeFrame(){
+    public EmployeeFrame() {
         super("Staff Manager");
 
         controller = new Controller();

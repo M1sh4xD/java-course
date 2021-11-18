@@ -9,7 +9,7 @@ public class Controller {
 
     Database db = new Database();
 
-    public Controller(){
+    public Controller() {
         try {
             db.connect();
             db.getFromDatabase();

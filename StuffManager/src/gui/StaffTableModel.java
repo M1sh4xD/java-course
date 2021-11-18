@@ -9,27 +9,27 @@ public class StaffTableModel extends AbstractTableModel {
     private List<Employee> db;
     private String[] colsName = {"Name", "Department", "Age", "Phone", "Position", "Gender"};
 
-    public void setData(List<Employee> db){
+    public void setData(List<Employee> db) {
         this.db = db;
     }
 
     @Override
-    public String getColumnName(int i){
+    public String getColumnName(int i) {
         return colsName[i];
     }
 
     @Override
-    public int getRowCount(){
+    public int getRowCount() {
         return db.size();
     }
 
     @Override
-    public int getColumnCount(){
+    public int getColumnCount() {
         return 6;
     }
 
     @Override
-    public Object getValueAt(int row, int column){
+    public Object getValueAt(int row, int column) {
         Employee emp = db.get(row);
 
         return switch (column) {

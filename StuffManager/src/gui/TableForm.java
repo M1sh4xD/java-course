@@ -19,12 +19,6 @@ public class TableForm extends Container {
     TableForm() {
         tableModel = new StaffTableModel();
         staffTable.setModel(tableModel);
-        refreshButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
     }
 
     public JPanel getTablePanel() {

@@ -7,7 +7,7 @@ import model.Employee;
 
 public class StaffTableModel extends AbstractTableModel {
     private List<Employee> db;
-    private String[] ColsName = {"Name", "Department", "Age", "Phone", "Position", "Gender"};
+    private String[] colsName = {"Name", "Department", "Age", "Phone", "Position", "Gender"};
 
     public void setData(List<Employee> db){
         this.db = db;
@@ -15,7 +15,7 @@ public class StaffTableModel extends AbstractTableModel {
 
     @Override
     public String getColumnName(int i){
-        return ColsName[i];
+        return colsName[i];
     }
 
     @Override

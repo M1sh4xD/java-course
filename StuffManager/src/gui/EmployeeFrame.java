@@ -30,18 +30,11 @@ public class EmployeeFrame extends JFrame {
             tableForm.refresh();
         });
 
-        JButton refreshButton = new JButton("Refresh");
-        refreshButton.addActionListener(e -> {
-            tableForm.setData(controller.getEmployees());
-            tableForm.refresh();
-        });
-
         add(empAddForm.getEmployeeAddPanel(), BorderLayout.WEST);
 
         add(tableForm.getTablePanel(), BorderLayout.CENTER);
 
         add(addButton, BorderLayout.SOUTH);
-        add(refreshButton, BorderLayout.AFTER_LINE_ENDS);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();

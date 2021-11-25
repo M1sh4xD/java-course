@@ -1,5 +1,7 @@
 # MIREA`s Java Programming course | Aivazyan Mikhail | IKBO-06-20 
 
+[![Build Status](https://scrutinizer-ci.com/g/M1sh4xD/java-course/badges/build.png?b=main)](https://scrutinizer-ci.com/g/M1sh4xD/java-course/build-status/main)
+
 Репозиторий с проектами практических заданий
 
 - Практическое задание 1.1 [V]

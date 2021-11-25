@@ -1,6 +1,6 @@
 # MIREA`s Java Programming course | Aivazyan Mikhail | IKBO-06-20 
 
-[![Build Status](https://scrutinizer-ci.com/g/M1sh4xD/java-course/badges/build.png?b=main)](https://scrutinizer-ci.com/g/M1sh4xD/java-course/build-status/main)
+[![Build Status](https://scrutinizer-ci.com/g/M1sh4xD/java-course/badges/build.png?b=main)](https://scrutinizer-ci.com/g/M1sh4xD/java-course/build-status/main) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/M1sh4xD/java-course/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/M1sh4xD/java-course/?branch=main)
 
 Репозиторий с проектами практических заданий
 
